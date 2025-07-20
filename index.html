@@ -1,141 +1,94 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Infopedia – The Home of Mind-Blowing Facts</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Infopedia - Home</title>
   <style>
-    * {
+    body {
       margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }body {
-  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
-  color: white;
-  line-height: 1.6;
-}
-
-header {
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  text-align: center;
-  position: sticky;
-  top: 0;
-  z-index: 999;
-}
-
-header h1 {
-  font-size: 2rem;
-  color: #f1c40f;
-}
-
-nav {
-  margin-top: 10px;
-}
-
-nav a {
-  margin: 0 15px;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s;
-}
-
-nav a:hover {
-  color: #f1c40f;
-}
-
-section {
-  padding: 50px 20px;
-  text-align: center;
-}
-
-section h2 {
-  margin-bottom: 20px;
-  font-size: 2rem;
-  color: #f1c40f;
-}
-
-.section-card {
-  background: rgba(255, 255, 255, 0.05);
-  margin: 20px auto;
-  padding: 30px;
-  border-radius: 15px;
-  max-width: 800px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.4);
-}
-
-button, a.download {
-  padding: 12px 25px;
-  background: #f1c40f;
-  color: #000;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  text-decoration: none;
-  font-weight: bold;
-  margin-top: 15px;
-  display: inline-block;
-  transition: 0.3s ease;
-}
-
-button:hover, a.download:hover {
-  background: #fff;
-  color: #000;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #111;
-  color: #777;
-}
-
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #222;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background: #444;
+      padding: 0.5rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+    }
+    section {
+      padding: 2rem;
+      text-align: center;
+    }
+    .resume-buttons a {
+      display: inline-block;
+      margin: 1rem;
+      padding: 0.8rem 1.5rem;
+      background-color: #ff6f00;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+    .resume-buttons a:hover {
+      background-color: #e65100;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
   </style>
 </head>
-<body>  <header>
-    <h1>Infopedia</h1>
-    <nav>
-      <a href="#facts">Facts</a>
-      <a href="#wishes">Wishes</a>
-      <a href="#templates">Templates</a>
-      <a href="#resume">Resume</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>  <section id="facts">
-    <div class="section-card">
-      <h2>Mind-Blowing Facts</h2>
-      <p>Explore our curated collection of impossible, shocking, and true facts that will twist your brain! 🔥</p>
-      <button onclick="alert('More facts coming soon!')">Explore Facts</button>
+<body>
+
+  <header>
+    <h1>Welcome to Infopedia</h1>
+    <p>The Home of Mind-Blowing Facts!</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Infopedia</h2>
+    <p>This is your space for crazy facts, templates, and more — all in one place!</p>
+  </section>
+
+  <!-- ✅ Resume Section -->
+  <section id="resume">
+    <h2>Download Resume</h2>
+    <p>Click below to view or download the resume in one click.</p>
+    <div class="resume-buttons">
+      <a href="resume.html" target="_blank">👀 View Resume</a>
+      <a href="resume.zip" download>⬇️ Download Resume</a>
     </div>
-  </section>  <section id="wishes">
-    <div class="section-card">
-      <h2>Animated Wishes</h2>
-      <p>Send birthday or festive wishes with animation, music, and fireworks! 🎉</p>
-      <button onclick="alert('Coming soon – interactive wish builder!')">Create Wish</button>
-    </div>
-  </section>  <section id="templates">
-    <div class="section-card">
-      <h2>Free Templates</h2>
-      <p>Get downloadable HTML/CSS templates for websites, birthday cards, and more.</p>
-      <a href="template.zip" class="download" download>Download Templates</a>
-    </div>
-  </section>  <section id="resume">
-    <div class="section-card">
-      <h2>My Resume</h2>
-      <p>Download my professional resume directly in PDF format.</p>
-      <a href="resume.pdf" class="download" download="Aditya_Singh_Resume">📥 Download Resume</a>
-    </div>
-  </section>  <section id="contact">
-    <div class="section-card">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:infopedia.channel@gmail.com" style="color:#f1c40f">infopedia.channel@gmail.com</a></p>
-    </div>
-  </section>  <footer>
-    <p>&copy; 2025 Infopedia | Created by Aditya Singh</p>
-  <div style="text-align: center; margin-top: 40px;">
-  
-  </footer></body>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email us at: contact@infopedia.com</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Infopedia. All rights reserved.</p>
+  </footer>
+
+</body>
 </html>
